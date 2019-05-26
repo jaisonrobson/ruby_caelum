@@ -1,0 +1,89 @@
+Ao ler sobre as versões iniciais do ruby, a parte do texto sobre compilação em tempo de execução me chamou a atenção, então fiz uma pesquisa rápida sobre "JIT", conclui que "JIT" se trata da tradução do código alto nível para código maquina, que pode estar sendo feita antes da execução como após a execução e que possui pontos fortes e fracos.
+
+Fonte de pesquisa do JIT:
+https://pt.wikipedia.org/wiki/JIT
+https://medium.com/@k0kubun/ruby-2-6-jit-progress-and-future-84e0a830ecbf
+https://medium.com/@k0kubun/the-method-jit-compiler-for-ruby-2-6-388ee0989c13
+
+obs: Não pesquisei muito além sobre este assunto, fiz apenas uma leitura rapida de tópicos iniciais das fontes indicadas para entender o que o JIT significa, ou seja, não realizei os testes e benchmark indicados nos posts.
+
+Para seguir o caminho exato da apostila em que estou me baseando nos estudos, tive que remover a versão atual do ruby da minha maquina, para isso utilizei a seguinte fonte:
+
+https://stackoverflow.com/questions/22753785/how-to-remove-ruby-from-ubuntu
+
+Comandos utilizados:
+
+which ruby
+/home/jason/.rvm/rubies/ruby-2.5.1/bin/ruby
+
+readlink -f /usr/bin/ruby
+/usr/bin/ruby2.5
+
+dpkg -S /usr/bin/ruby2.5
+ruby2.5: /usr/bin/ruby2.5
+
+apt-get purge ruby2.5
+obs: ao executar este comando obtive a seguinte falha pois nao estava como root.
+
+"E: Não foi possível abrir arquivo de trava /var/lib/dpkg/lock-frontend - open (13: Permissão negada)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?"
+
+em seguida executei este comando:
+sudo apt-get purge ruby2.5
+
+Com isso não consegui remover o ruby do meu sistema, pois a instalacao anterior havia sido feito com o RVM, portanto decidi remover o RVM com o seguinte comando:
+
+rvm implode
+
+apos executar este comando, obtive falha na exclusao de alguns arquivos e o sistema aconselhou que eu removesse manualmente:
+
+"rm: não foi possível remover '/etc/profile.d/rvm.sh': Permissão negada
+Could not remove '/etc/profile.d/rvm.sh', please try removing it manually."
+
+"Note you may need to manually remove /etc/rvmrc and ~/.rvmrc if they exist still..."
+
+Em seguida para remover diretorios fiz uma pesquisa pelo comando e encontrei o seguinte link util:
+
+obs: apesar de eu ja conhecer o comando 'rm', eu quis ter certeza de como utiliza-lo afim de nao causar nenhum contratempo em meu estudo.
+
+https://askubuntu.com/questions/217893/how-to-delete-a-non-empty-directory-in-terminal
+
+fui ate o diretorio do rvm.sh, tentei remover apenas o arquivo e em alguns casos tive falha, apenas consegui remove-lo quando digite o seguinte comando:
+
+sudo rm -rf rvm.sh
+
+Para encurtar o que foi feito em seguida posso dizer que fui atras de todos os arquivos do rvm que ainda existiam na maquina e os removi manualmente.
+
+Algo que vale a pena ressaltar e que eu tive que editar manualmente os arquivos do bash para remover os 'bindings' para o pacote do rvm.
+
+Apos tentar executar todos os comandos de versao do bundler, ruby e rvm, todos deram falha como se nao estivessem instalados, portanto, obtive sucesso na desinstalação.
+
+Ao tentar executar o comando da apostila:
+
+"sudo apt-get install ruby2.0 ruby2.0-dev build-essential libssl-dev zlib1g-dev \ ruby-switch"
+
+Constatei então que o pacote ruby2.0 para instalação direta dessa maneira esta obsoleto e portanto inexistente na web.
+
+Optei por instalar a versão mais recente do ruby novamente incluindo o pacote rvm e afins seguindo o tutorial do site:
+
+https://rvm.io/rvm/install
+
+obtive o seguinte erro ao tentar adquirir as chaves do comando:
+
+
+"gpg: key 105BD0E739499BDB: 6 signatures not checked due to missing keys
+gpg: chave 105BD0E739499BDB: "Piotr Kuczynski <piotr.kuczynski@gmail.com>" 3 assinatura(s) nova(s)
+gpg: key 3804BB82D39DC0E3: 105 signatures not checked due to missing keys
+gpg: chave 3804BB82D39DC0E3: "Michal Papis (RVM signing) <mpapis@gmail.com>" não mudada
+gpg: ultimamente não encontradas chaves confiáveis
+gpg: Número total processado: 2
+gpg:              não modificados: 1
+gpg:         novas assinaturas: 3"
+
+Ignorei o erro e em seguida instalei o rvm com os passos deste link
+
+https://github.com/rvm/ubuntu_rvm
+
+Apos instalar o rvm e a ultima versao do ruby, segui com alguns testes e exercicios basicos da apostila que estao nos arquivos da pasta treinamento ruby.
+
+

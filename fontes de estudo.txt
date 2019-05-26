@@ -1,0 +1,4 @@
+https://pt.wikipedia.org/wiki/JIT
+https://medium.com/@k0kubun/ruby-2-6-jit-progress-and-future-84e0a830ecbf
+https://medium.com/@k0kubun/the-method-jit-compiler-for-ruby-2-6-388ee0989c13
+https://stackoverflow.com/questions/22753785/how-to-remove-ruby-from-ubuntu#comment34684531_22753859

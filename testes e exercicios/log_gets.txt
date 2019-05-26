@@ -1,0 +1,38 @@
+2.6.3 :014 > 
+2.6.3 :015 > 
+2.6.3 :016 > %gets%
+2.6.3 :017 >   nome = 'José'
+Traceback (most recent call last):
+        3: from /usr/share/rvm/rubies/ruby-2.6.3/bin/irb:23:in `<main>'
+        2: from /usr/share/rvm/rubies/ruby-2.6.3/bin/irb:23:in `load'
+        1: from /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+SyntaxError ((irb):16: unknown type of %string)
+%gets%
+^~~
+2.6.3 :018 > nome = 'José'
+ => "José" 
+2.6.3 :019 > 
+2.6.3 :020 > fafa = gets
+José
+ => "José\n" 
+2.6.3 :021 > feifo = gets
+Teste de atribuicao
+ => "Teste de atribuicao\n" 
+2.6.3 :022 > 
+2.6.3 :023 > feifo
+ => "Teste de atribuicao\n" 
+2.6.3 :024 > fafa
+ => "José\n" 
+2.6.3 :025 > name
+Traceback (most recent call last):
+        4: from /usr/share/rvm/rubies/ruby-2.6.3/bin/irb:23:in `<main>'
+        3: from /usr/share/rvm/rubies/ruby-2.6.3/bin/irb:23:in `load'
+        2: from /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):25
+NameError (undefined local variable or method `name' for main:Object)
+Did you mean?  nome
+2.6.3 :026 > nome
+ => "José" 
+2.6.3 :027 > 
+2.6.3 :028 > 
+
