@@ -102,4 +102,8 @@ De acordo com a apostila os tipos numericos sao "Fixnum, Bignum e Float Fixnum",
 
 Apos fazer alguns testes no arquivo dei sequencia no topico Ranges e Simbolos.
 
+obs: Tive que pesquisar como utilizar o modulo do Ruby, encontrei no link abaixo:
+
+https://stackoverflow.com/questions/3517238/what-does-the-operator-do-in-ruby-in-n-2
+
 Simbolos sao imutaveis e compartilhados por todo o projeto/app, se houver dois lugares distintos que utilizam de um simbolo com mesmo valor, estes usaram o mesmo objeto na memoria.
