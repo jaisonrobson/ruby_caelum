@@ -1,3 +1,7 @@
+----------------------------------------
+26/05/2019
+----------------------------------------
+
 Ao ler sobre as versões iniciais do ruby, a parte do texto sobre compilação em tempo de execução me chamou a atenção, então fiz uma pesquisa rápida sobre "JIT", conclui que "JIT" se trata da tradução do código alto nível para código maquina, que pode estar sendo feita antes da execução como após a execução e que possui pontos fortes e fracos.
 
 Fonte de pesquisa do JIT:
@@ -86,4 +90,16 @@ https://github.com/rvm/ubuntu_rvm
 
 Apos instalar o rvm e a ultima versao do ruby, segui com alguns testes e exercicios basicos da apostila que estao nos arquivos da pasta treinamento ruby.
 
+----------------------------------------
+27/05/2019
+----------------------------------------
 
+3.9 Tipos e operações básicas
+
+Fiz alguns testes sobre este topico e salvei no arquivo chamado 3_9.rb
+
+De acordo com a apostila os tipos numericos sao "Fixnum, Bignum e Float Fixnum", porem ao realizar ao verificar o tipo do objeto sempre foi retornado "Integer".
+
+Apos fazer alguns testes no arquivo dei sequencia no topico Ranges e Simbolos.
+
+Simbolos sao imutaveis e compartilhados por todo o projeto/app, se houver dois lugares distintos que utilizam de um simbolo com mesmo valor, estes usaram o mesmo objeto na memoria.
