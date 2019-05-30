@@ -107,3 +107,15 @@ obs: Tive que pesquisar como utilizar o modulo do Ruby, encontrei no link abaixo
 https://stackoverflow.com/questions/3517238/what-does-the-operator-do-in-ruby-in-n-2
 
 Simbolos sao imutaveis e compartilhados por todo o projeto/app, se houver dois lugares distintos que utilizam de um simbolo com mesmo valor, estes usaram o mesmo objeto na memoria.
+
+----------------------------------------
+29/05/2019
+----------------------------------------
+
+3.11 Estruturas de controle
+
+Fiz a leitura do topico e realizei alguns testes conforme estava lendo.
+
+TODO: pesquisar sobre `match` e `MatchData`
+
+
