@@ -118,4 +118,50 @@ Fiz a leitura do topico e realizei alguns testes conforme estava lendo.
 
 TODO: pesquisar sobre `match` e `MatchData`
 
+----------------------------------------
+08/06/2019
+----------------------------------------
+
+3.12 Exercicios - Estruturas de controle e regexp
+
+Implementei os exercicios, o primeiro na pasta "restaurante" e os outros no "3_12.rb"
+
+3.13 Desafio
+
+1) Sem tentar executar o código abaixo, responda: Ele funciona? Por que?
+resultado = 10 + 4
+texto = "O valor é " + resultado
+puts(texto)
+
+R= Funciona, porque mesmo com parenteses o ruby permite que seja chamado o puts, afinal, o ruby apenas por conveção e utilizado sem parenteses mas não significa que nao possa ser utilizado com parenteses na chamada de qualquer metodo.
+
+2) E o código abaixo, deveria funcionar? Por que?
+puts(1+2)
+
+R= Sim, e apenas uma expressao sendo diretamente impressa sem armazenar numa variavel explicita.
+
+3) Baseado na sua resposta da primeira questão, por que o código abaixo funciona?
+resultado = 10 + 3
+texto = "O valor é: #{resultado}"
+
+R= Funciona porque e uma simples interpolação de string que esta sendo recebida na variavel 'texto', só não vai imprimir nada.
+
+4) Qual a saída deste código?
+resultado = 10 ** 2
+puts('o resultado é: #{resultado}')
+
+R= Provavelmente acontecerá um erro, porque a interpolação de strings não funciona com aspas simples '
+
+6) Por que a comparação entre símbolos é muito mais rápida que entre Strings?
+simbolo1 = :abc
+simbolo2 = :abc
+simbolo1 == simbolo2
+# => true
+texto1 = "abc"
+texto2 = "abc"
+texto1 == texto2
+# => true
+
+R= Porque o simbolos utilizam o mesmo espaço da memoria, você está comparando duas informações que estão no mesmo local, portanto, a comparação se torna mais rápida.
+
 
