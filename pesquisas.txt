@@ -1,0 +1,5 @@
+Pesquisar os seguintes topicos/temas:
+
+'Match' e/ou 'MatchData'
+Memória Heap
+Smalltalk
