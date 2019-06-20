@@ -183,3 +183,8 @@ Continuando com a leitura do capitulo 4, topico 4.3 Definição de metodos.
 Alguns testes foram feitos e estao na pasta '18-06-2019'
 
 
+----------------------------------------
+19/06/2019
+----------------------------------------
+
+Realizei o exercicio do topico 4.4, esta no arquivo 4_4.rb na pasta '19-06-2019'
