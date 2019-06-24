@@ -188,3 +188,11 @@ Alguns testes foram feitos e estao na pasta '18-06-2019'
 ----------------------------------------
 
 Realizei o exercicio do topico 4.4, esta no arquivo 4_4.rb na pasta '19-06-2019'
+
+----------------------------------------
+23/06/2019
+----------------------------------------
+
+Dei continuidade ao topico 4.5 da apostila. Fiz alguns testes que estao no arquivo 4_5.rb
+
+Analisando bem este topico minha conclusão é que o uso do metodo 'send' para com objetos garante uma flexibilidade maior, permitindo assim desfrutar do polimorfismo dos objetos.
